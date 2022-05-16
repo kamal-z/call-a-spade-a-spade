@@ -15,7 +15,7 @@
 	<name>call-a-spade-a-spade</name>
 	<description>call-a-spade-a-spade</description>
 	<properties>
-		<java.version>10</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.document.docx -->
