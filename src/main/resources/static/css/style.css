@@ -28,3 +28,10 @@ a:hover{
 .bottom .copyright p, .bottom .copyright a:hover{
     color: #6c6d83;
 }
+.footer {
+ position: fixed;
+  left: 0;
+  bottom: 0;
+width: 100%;
+
+}
