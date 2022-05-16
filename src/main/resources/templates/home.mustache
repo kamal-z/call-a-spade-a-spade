@@ -1,48 +1,53 @@
-
- {{ > head}}
+{{ > head}}
 
 <body>
-
-
-
-{{ > carousel }}
-
-<div class="container ">
-  <div class="row">
-    <div class="col-md">
-		{{ > likes}}
-	</div>
-   
-   
-   <div class="col-md">
-      {{ > deslikes}}
-    </div>
-  </div>
-  
-   <div class="row">
-    <div class="col-md">
-		
-<div class="container-fluid justify-content-center">
-    <div class="row py-5">
-        <div class="col">
-            <div class="card border-0">
-                <div class="card-body text-center "><h2><b>Teile mit, was du magst bzw. hasst!</b></h2><p class="pl-0 ml-0 mb-5">Sei mutig!</p>
-                    <div class="row text-center justify-content-center">
-						<div class="col-auto"><div class="input-group-lg input-group mb-3 ">
-							<div class="input-group-append">
-							<button class="btn btn-success" type="button" > <b>Los geht's</b></button></div></div></div></div>
-                </div>
+   {{ > nav }}
+   <div class="container mt-5">
+      <div class="row">
+	  
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9636723058225109"
+     crossorigin="anonymous"></script>
+	 
+	  <form action="/docToPDF" method="Post"enctype="multipart/form-data">
+         <div class="col-md">
+            <div class="jumbotron">
+               <h1 class="display-4">Convert doc to PDF</h1>
+               <hr class="my-4">
+               <p>Convert your doc documents to PDF.</p>
+               <div class="input-group mb-3">
+                  <div class="custom-file">
+                     <input type="file" class="custom-file-input" name="wordFile" id="inputGroupFile1">
+                     <label class="custom-file-label"  id="labelinputGroupFile1" for="inputGroupFile01" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                  </div>
+               </div>
+			   <button type="submit" class="btn btn-primary btnSubmit">Convert to PDF now</button>
             </div>
-        </div>
-    </div><hr class="mx-0 px-0">
-</div>
-	</div>
+			{{#error}}
+			<div class="alert alert-danger" id="alert" role="alert">
+				{{error}}
+			</div>
+			{{/error}}
+         </div>
+	</form>		
+<form action="/PDFToDoc" method="Post"enctype="multipart/form-data">
+         <div class="col-md">
+            <div class="jumbotron">
+               <h1 class="display-4">Convert PDF to Doc</h1>
+               <hr class="my-4">
+               <p>Convert your PDF documents to word.</p>
+			    <div class="input-group mb-3">
+                  <div class="custom-file">
+                     <input type="file" class="custom-file-input" name="PDFFile" id="inputGroupFile2">
+                     <label class="custom-file-label"  id="labelinputGroupFile2" for="inputGroupFile01" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                  </div>
+               </div>
+                <button type="submit"  class="btn btn-primary btnSubmit">Convert to word now</button>
+            </div>
+         </div>
+	</form>			 
+		 
+      </div>
+   </div>
    
-   
-    
-  </div>
   
-</div>
-
-
-{{ > footer}}
+  {{ > footer}}
