@@ -23,7 +23,7 @@ public class WebConfig  implements WebMvcConfigurer{
 	
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        exposeDirectory("photos", registry);
+        exposeDirectory("files", registry);
     }
      
     private void exposeDirectory(String dirName, ResourceHandlerRegistry registry) {

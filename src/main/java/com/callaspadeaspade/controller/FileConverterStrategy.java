@@ -10,7 +10,7 @@ import com.callaspadeaspade.controller.exception.PDFExtentionException;
 
 public interface FileConverterStrategy {
 	
-	public static final String UPLOAD_DIR="/app/Downloads"; 
+	public static final String UPLOAD_DIR="/app/files"; 
 	
 	String convert(MultipartFile file) throws IOException, PDFExtentionException, NoFileChoosedException;
 	
